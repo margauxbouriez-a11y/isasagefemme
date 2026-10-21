@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artemis 32 | Sages-femmes à Condom</title>
+<meta name="description" content="Cabinet de sages-femmes Artemis 32 à Condom (32). Suivi de grossesse, échographie, gynécologie, rééducation périnéale, pessaires, tecarthérapie.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#ffffff;
+  --soft:#f4f7f6;
+  --ink:#1d2b2a;
+  --muted:#5b6b69;
+  --line:#e2e8e6;
+  --brand:#2f6b62;
+  --brand-dark:#245650;
+  --brand-soft:#e7f1ef;
+  --font:"Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{line-height:1.2;letter-spacing:-.01em}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
+img{max-width:100%}
+
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left,0px));padding-right:max(20px, env(safe-area-inset-right,0px))}
+section{padding-block:88px}
+.soft{background:var(--soft)}
+.label{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brand)}
+.title{font-size:clamp(1.7rem,3vw,2.2rem);font-weight:700;margin-top:8px}
+.head{margin-bottom:44px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1.4rem;border-radius:8px;font-weight:600;font-size:.95rem;border:1px solid transparent;transition:background .2s, border-color .2s}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-dark)}
+.btn-outline{border-color:var(--line);color:var(--ink);background:#fff}
+.btn-outline:hover{border-color:var(--brand)}
+
+/* Header */
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem}
+.logo-mark{width:34px;height:34px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:.85rem;font-weight:700}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+nav a{font-size:.93rem;font-weight:500;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+@media (max-width:860px){nav{display:none}}
+
+/* Hero */
+.hero{padding-block:96px;background:linear-gradient(180deg,var(--brand-soft),#fff)}
+.hero h1{font-size:clamp(2.1rem,5vw,3.4rem);font-weight:700;max-width:16ch}
+.hero p{font-size:1.15rem;color:var(--muted);margin-top:18px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.facts{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:48px;padding-top:28px;border-top:1px solid var(--line);font-size:.95rem}
+.facts span{color:var(--muted)}
+.facts strong{display:block;color:var(--ink);font-weight:600}
+
+/* Team */
+.team{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+@media (max-width:760px){.team{grid-template-columns:1fr}}
+.person{border:1px solid var(--line);border-radius:14px;padding:32px;background:#fff;display:flex;flex-direction:column;gap:20px}
+.person-top{display:flex;align-items:center;gap:16px}
+.avatar{width:60px;height:60px;border-radius:50%;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;font-weight:700;font-size:1.2rem;flex:none}
+.person h3{font-size:1.25rem;font-weight:700}
+.person .role{color:var(--muted);font-size:.93rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:.82rem;font-weight:500;padding:.35rem .75rem;border-radius:999px;background:var(--soft);color:var(--ink)}
+
+/* Services */
+.services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:960px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.services{grid-template-columns:1fr}}
+.svc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;align-items:center;gap:14px;font-weight:500;font-size:.97rem}
+.svc svg{width:22px;height:22px;flex:none;stroke:var(--brand);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* Tecar */
+.tecar{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media (max-width:860px){.tecar{grid-template-columns:1fr;gap:36px}}
+.tecar p{color:var(--muted);margin-top:16px;max-width:30em}
+.poster{aspect-ratio:3/4;max-width:420px;width:100%;border-radius:14px;background:var(--soft);border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);font-size:.9rem;overflow:hidden}
+.poster img{width:100%;height:100%;object-fit:cover}
+
+/* RDV */
+.rdv{background:var(--brand);color:#fff}
+.rdv .label{color:rgba(255,255,255,.75)}
+.rdv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:860px){.rdv-grid{grid-template-columns:1fr}}
+.rdv-card{background:#fff;color:var(--ink);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:6px}
+.rdv-card h3{font-size:1.1rem;font-weight:700}
+.rdv-card .sub{color:var(--muted);font-size:.9rem}
+.rdv-card .num{font-size:1.25rem;font-weight:600;font-variant-numeric:tabular-nums}
+.rdv-card .btn{margin-top:18px;align-self:flex-start}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+@media (max-width:860px){.contact{grid-template-columns:1fr;gap:36px}}
+.addr{font-size:1.3rem;font-weight:600;margin-top:12px}
+.rows{border-top:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 16px;padding-block:18px;border-bottom:1px solid var(--line)}
+.row span:first-child{color:var(--muted)}
+.row a{font-weight:600;font-variant-numeric:tabular-nums}
+
+footer{padding-block:28px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#"><span class="logo-mark">A</span>Artemis 32</a>
+    <nav aria-label="Menu">
+      <ul>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#soins">Consultations</a></li>
+        <li><a href="#tecar">Tecarthérapie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="#rdv">Prendre rendez-vous</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="label">Cabinet de sages-femmes · Condom</p>
+      <h1>Votre suivi de femme, en toute confiance.</h1>
+      <p>Grossesse, gynécologie, périnée.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#rdv">Prendre rendez-vous</a>
+        <a class="btn btn-outline" href="#soins">Nos consultations</a>
+      </div>
+      <div class="facts">
+        <div><span>Adresse</span><strong>16 bis bd Saint-Jacques, 32100 Condom</strong></div>
+        <div><span>Secrétariat</span><strong>09 53 53 52 05</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipe">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">L'équipe</p>
+        <h2 class="title">Vos sages-femmes</h2>
+      </div>
+      <div class="team">
+        <article class="person">
+          <div class="person-top">
+            <div class="avatar" aria-hidden="true">IB</div>
+            <div>
+              <h3>Isabelle Baste Papelorey</h3>
+              <p class="role">Sage-femme diplômée d'État</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">DU Échographie</span>
+            <span class="tag">DU Gynécologie et prévention</span>
+            <span class="tag">Pessaires</span>
+            <span class="tag">Mon Périnée Bien-Aimé</span>
+          </div>
+        </article>
+        <article class="person">
+          <div class="person-top">
+            <div class="avatar" aria-hidden="true">CM</div>
+            <div>
+              <h3>Chloé Mac</h3>
+              <p class="role">Sage-femme diplômée d'État</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">Pessaires</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="soins">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Consultations</p>
+        <h2 class="title">Nos prises en charge</h2>
+      </div>
+      <div class="services">
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Suivi de grossesse</div>
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Préparation à l'accouchement</div>
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Échographie de datation</div>
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Suivi à domicile</div>
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Rééducation périnéale</div>
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Gynécologie</div>
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Contraception</div>
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Prévention gynécologique</div>
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Pose et suivi de pessaires</div>
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Pathologies de la vulve</div>
+        <div class="svc"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>Tecarthérapie</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tecar">
+    <div class="wrap tecar">
+      <div>
+        <p class="label">Nouveau au cabinet</p>
+        <h2 class="title">La tecarthérapie</h2>
+        <p>Une technique douce par radiofréquence, en complément de la rééducation périnéale et du traitement des douleurs et cicatrices.</p>
+      </div>
+      <div class="poster">Affiche Tecar</div>
+    </div>
+  </section>
+
+  <section class="rdv" id="rdv">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Rendez-vous</p>
+        <h2 class="title">Prendre rendez-vous</h2>
+      </div>
+      <div class="rdv-grid">
+        <div class="rdv-card">
+          <h3>Isabelle Baste Papelorey</h3>
+          <p class="sub">Sage-femme</p>
+          <a class="btn btn-primary" id="doctolib-isabelle" href="https://www.doctolib.fr/sage-femme/condom" target="_blank" rel="noopener">Réserver sur Doctolib</a>
+        </div>
+        <div class="rdv-card">
+          <h3>Chloé Mac</h3>
+          <p class="sub">Sage-femme</p>
+          <a class="btn btn-primary" id="doctolib-chloe" href="https://www.doctolib.fr/sage-femme/condom" target="_blank" rel="noopener">Réserver sur Doctolib</a>
+        </div>
+        <div class="rdv-card">
+          <h3>Secrétariat</h3>
+          <p class="num">09 53 53 52 05</p>
+          <a class="btn btn-outline" href="tel:+33953535205">Appeler</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div>
+        <p class="label">Contact</p>
+        <p class="addr">16 bis boulevard Saint-Jacques<br>32100 Condom</p>
+        <a class="btn btn-outline" style="margin-top:24px" href="https://www.google.com/maps/search/?api=1&query=16+bis+boulevard+Saint-Jacques+32100+Condom" target="_blank" rel="noopener">Itinéraire</a>
+      </div>
+      <div class="rows">
+        <div class="row"><span>Secrétariat</span><a href="tel:+33953535205">09 53 53 52 05</a></div>
+        <div class="row"><span>Isabelle Baste Papelorey</span><a href="tel:+33768208819">07 68 20 88 19</a></div>
+        <div class="row"><span>Chloé Mac</span><a href="tel:+33745199933">07 45 19 99 33</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Artemis 32 · Cabinet de sages-femmes</span>
+    <span>Urgence : 15</span>
+  </div>
+</footer>
+
+</body>
+</html>
