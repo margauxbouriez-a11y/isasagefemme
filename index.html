@@ -7,18 +7,12 @@
 <meta name="description" content="Cabinet de sages-femmes Artemis 32 à Condom (32). Suivi de grossesse, échographie, gynécologie, rééducation périnéale, pessaires, tecarthérapie.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap">
 <style>
 :root{
-  --bg:#ffffff;
-  --soft:#f4f7f6;
-  --ink:#1d2b2a;
-  --muted:#5b6b69;
-  --line:#e2e8e6;
-  --brand:#2f6b62;
-  --brand-dark:#245650;
-  --brand-soft:#e7f1ef;
-  --font:"Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+--bg:#fffaf7;--soft:#fbeeee;--ink:#2f2326;--muted:#76656a;--line:#efdcdc;
+--brand:#d4747f;--brand-dark:#b95c68;--brand-soft:#fde3e3;
+--font:"DM Sans","Helvetica Neue",Arial,sans-serif;--display:"DM Serif Display",Georgia,serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -109,9 +103,28 @@ nav a:hover{color:var(--ink)}
 footer{padding-block:28px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
 
+h1,h2,.title,.logo{font-family:var(--display);font-weight:400;letter-spacing:0}
+.hero{background:#fde3e3;padding-block:110px 96px}
+.hero h1{font-size:clamp(2.4rem,5.4vw,3.8rem)}
+.hero h1 em{color:var(--brand)}
+.hero-art{aspect-ratio:1;border-radius:46% 54% 40% 60%/55% 45% 55% 45%;background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.6) 0 16%,transparent 17%),radial-gradient(circle at 70% 65%,#ffd2c2 0 26%,transparent 27%),linear-gradient(150deg,#f3a7b2,#f9c7bd);box-shadow:0 30px 60px -30px rgba(185,92,104,.5)}
+.facts{border-top-color:rgba(185,92,104,.25)}
+.btn{border-radius:12px}
+.btn-outline{background:transparent;border-color:#e9b9bf}
+.person{border:none;background:#fbeeee;border-radius:20px}
+.avatar{background:#fff;color:var(--brand)}
+.tag{background:#fff}
+.soft{background:#fff4ef}
+.svc{border:none;background:#fff;border-radius:16px;border-left:4px solid #f3b3bc}
+.svc svg{stroke:var(--brand)}
+.poster{border:none;border-radius:20px;background:#fde3e3}
+.rdv{background:#2f2326}
+.rdv .label{color:#f3b3bc}
+.rdv-card{border-radius:20px;background:#fffaf7}
+
 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
 @media (max-width:860px){.hero-grid{grid-template-columns:1fr;gap:36px}}
-.hero-photo{margin:0;max-width:400px;width:100%;justify-self:end;aspect-ratio:3/4;overflow:hidden;border-radius:14px;box-shadow:0 24px 48px -28px rgba(29,43,42,.45)}
+.hero-photo{margin:0;max-width:400px;width:100%;justify-self:end;aspect-ratio:3/4;overflow:hidden;border-radius:46% 54% 40% 60%/40% 40% 60% 60%;box-shadow:0 30px 60px -30px rgba(185,92,104,.55)}
 @media (max-width:860px){.hero-photo{justify-self:start;max-width:none;aspect-ratio:4/3}}
 .hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
 </style>
@@ -137,7 +150,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 2
   <section class="hero">
     <div class="wrap hero-grid"><div>
       <p class="label">Cabinet de sages-femmes · Condom</p>
-      <h1>Votre suivi de femme, en toute confiance.</h1>
+      <h1>Votre suivi de femme, <em>en confiance</em>.</h1>
       <p>Grossesse, gynécologie, périnée.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#rdv">Prendre rendez-vous</a>
