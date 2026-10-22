@@ -10,5 +10,5 @@ Settings → Pages → Source : « Deploy from a branch », branche `main`, doss
 
 ## À compléter
 
-- Liens Doctolib de chaque sage-femme : remplacer l'adresse des boutons `id="doctolib-isabelle"` et `id="doctolib-chloe"` dans `index.html`.
+- Lien Doctolib de Chloé Mac : remplacer l'adresse du bouton `id="doctolib-chloe"` dans `index.html` (celui d'Isabelle est en place).
 - Affiche Tecar : ajouter l'image dans le dépôt et la placer dans la section `id="tecar"`.
