@@ -121,6 +121,12 @@ h1,h2,h3,.logo,.title{font-family:var(--display);font-weight:700}
 .poster{border-radius:26px;background:repeating-linear-gradient(45deg,#fff3f5 0 14px,#fff8f9 14px 28px)}
 .rdv{background:var(--brand)}
 .rdv-card{border-radius:26px}
+
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr;gap:36px}}
+.hero-photo{margin:0;max-width:400px;width:100%;justify-self:end;aspect-ratio:3/4;overflow:hidden;border-radius:32px;box-shadow:0 0 0 8px #fff, 0 24px 48px -24px rgba(229,139,160,.6)}
+@media (max-width:860px){.hero-photo{justify-self:start;max-width:none;aspect-ratio:4/3}}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
 </style>
 </head>
 <body>
@@ -142,7 +148,7 @@ h1,h2,h3,.logo,.title{font-family:var(--display);font-weight:700}
 
 <main>
   <section class="hero">
-    <div class="wrap">
+    <div class="wrap hero-grid"><div>
       <p class="label">Cabinet de sages-femmes · Condom</p>
       <h1>Votre suivi de femme, <em>tout en douceur</em>.</h1>
       <p>Grossesse, gynécologie, périnée.</p>
@@ -154,6 +160,8 @@ h1,h2,h3,.logo,.title{font-family:var(--display);font-weight:700}
         <div><span>Adresse</span><strong>16 bis bd Saint-Jacques, 32100 Condom</strong></div>
         <div><span>Secrétariat</span><strong>09 53 53 52 05</strong></div>
       </div>
+      </div>
+      <figure class="hero-photo"><img src="../cabinet.jpg" alt="Salle de consultation du cabinet Artemis 32" width="525" height="700"></figure>
     </div>
   </section>
   <svg class="wave" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v18c-180 26-360 30-540 12S540 0 360 12 120 42 0 30z" fill="#fff0f3"/></svg>
@@ -239,7 +247,7 @@ h1,h2,h3,.logo,.title{font-family:var(--display);font-weight:700}
         <div class="rdv-card">
           <h3>Isabelle Baste Papelorey</h3>
           <p class="sub">Sage-femme</p>
-          <a class="btn btn-primary" id="doctolib-isabelle" href="https://www.doctolib.fr/sage-femme/condom" target="_blank" rel="noopener">Réserver sur Doctolib</a>
+          <a class="btn btn-primary" id="doctolib-isabelle" href="https://www.doctolib.fr/sage-femme/condom/isabelle-baste-papelorey" target="_blank" rel="noopener">Réserver sur Doctolib</a>
         </div>
         <div class="rdv-card">
           <h3>Chloé Mac</h3>

@@ -105,8 +105,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 2
 
 h1,h2,.title,.logo{font-family:var(--display);font-weight:400;letter-spacing:0}
 .hero{background:#fde3e3;padding-block:110px 96px}
-.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
-@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-art{display:none}}
 .hero h1{font-size:clamp(2.4rem,5.4vw,3.8rem)}
 .hero h1 em{color:var(--brand)}
 .hero-art{aspect-ratio:1;border-radius:46% 54% 40% 60%/55% 45% 55% 45%;background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.6) 0 16%,transparent 17%),radial-gradient(circle at 70% 65%,#ffd2c2 0 26%,transparent 27%),linear-gradient(150deg,#f3a7b2,#f9c7bd);box-shadow:0 30px 60px -30px rgba(185,92,104,.5)}
@@ -123,6 +121,12 @@ h1,h2,.title,.logo{font-family:var(--display);font-weight:400;letter-spacing:0}
 .rdv{background:#2f2326}
 .rdv .label{color:#f3b3bc}
 .rdv-card{border-radius:20px;background:#fffaf7}
+
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr;gap:36px}}
+.hero-photo{margin:0;max-width:400px;width:100%;justify-self:end;aspect-ratio:3/4;overflow:hidden;border-radius:46% 54% 40% 60%/40% 40% 60% 60%;box-shadow:0 30px 60px -30px rgba(185,92,104,.55)}
+@media (max-width:860px){.hero-photo{justify-self:start;max-width:none;aspect-ratio:4/3}}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
 </style>
 </head>
 <body>
@@ -144,7 +148,7 @@ h1,h2,.title,.logo{font-family:var(--display);font-weight:400;letter-spacing:0}
 
 <main>
   <section class="hero">
-    <div class="wrap"><div>
+    <div class="wrap hero-grid"><div>
       <p class="label">Cabinet de sages-femmes · Condom</p>
       <h1>Votre suivi de femme, <em>en confiance</em>.</h1>
       <p>Grossesse, gynécologie, périnée.</p>
@@ -157,7 +161,7 @@ h1,h2,.title,.logo{font-family:var(--display);font-weight:400;letter-spacing:0}
         <div><span>Secrétariat</span><strong>09 53 53 52 05</strong></div>
       </div>
       </div>
-      <div class="hero-art" aria-hidden="true"></div>
+      <figure class="hero-photo"><img src="../cabinet.jpg" alt="Salle de consultation du cabinet Artemis 32" width="525" height="700"></figure>
     </div>
   </section>
 
@@ -242,7 +246,7 @@ h1,h2,.title,.logo{font-family:var(--display);font-weight:400;letter-spacing:0}
         <div class="rdv-card">
           <h3>Isabelle Baste Papelorey</h3>
           <p class="sub">Sage-femme</p>
-          <a class="btn btn-primary" id="doctolib-isabelle" href="https://www.doctolib.fr/sage-femme/condom" target="_blank" rel="noopener">Réserver sur Doctolib</a>
+          <a class="btn btn-primary" id="doctolib-isabelle" href="https://www.doctolib.fr/sage-femme/condom/isabelle-baste-papelorey" target="_blank" rel="noopener">Réserver sur Doctolib</a>
         </div>
         <div class="rdv-card">
           <h3>Chloé Mac</h3>
