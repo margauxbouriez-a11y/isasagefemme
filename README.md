@@ -10,5 +10,5 @@ Settings → Pages → Source : « Deploy from a branch », branche `main`, doss
 
 ## À compléter
 
-- Photos d'Isabelle et Chloé : actuellement affichées depuis leurs profils Doctolib. Pour plus de fiabilité, ajouter `isabelle.jpg` et `chloe.jpg` dans le dépôt.
+- Photos d'Isabelle et Chloé : déposer `isabelle.jpg` et `chloe.jpg` à la racine du dépôt (format portrait). Tant qu'elles sont absentes, les initiales s'affichent.
 - Affiche Tecar : ajouter l'image dans le dépôt et la placer dans la section `id="tecar"`.
